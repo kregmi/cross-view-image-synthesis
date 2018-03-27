@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Cross-View Image Synthesis using Conditional GANs
 
 You can use the [editor on GitHub](https://github.com/kregmi/cross-view-image-synthesis/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
