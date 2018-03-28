@@ -2,9 +2,11 @@
 [[Project](https://kregmi.github.io/cross-view-image-synthesis)]
 [[Arxiv](https://arxiv.org/pdf/1803.03396.pdf)]
 
-Cross-View Image Synthesis using Conditional GANs
+Cross-View Image Synthesis using Conditional GANs, 
 
 Krishna Regmi, [Ali Borji](http://aliborji.xyz/aliborji.html)
+
+CVPR 2018.
 
 ## Code
 Our code is borrowed from [pix2pix](https://github.com/phillipi/pix2pix).
