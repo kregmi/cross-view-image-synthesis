@@ -6,24 +6,24 @@ Cross-View Image Synthesis using Conditional GANs
 
 Krishna Regmi, [Ali Borji](http://aliborji.xyz/aliborji.html)
 
-### Code
+## Code
 Our code is heavily borrowed from [pix2pix](https://github.com/phillipi/pix2pix).
 We will release the code soon.
 
 
-### DATASET
+## DATASET
 
 We used the following datasets:
 1. [GT-CrossView](https://github.com/lugiavn/gt-crossview)
 2. [CVUSA](http://cs.uky.edu/~jacobs/datasets/cvusa/)
 
 
-### Models
+## Models
 Pretrained models can be downloaded here.
 [X-Fork]
 [X-Seq]
 
-### Citation
+## Citation
 If you find our work useful in your research, please cite our paper 
 [Cross-View Image Synthesis using Conditional GANs](https://arxiv.org/pdf/1803.03396.pdf): 
 
