@@ -7,7 +7,7 @@ Cross-View Image Synthesis using Conditional GANs
 Krishna Regmi, [Ali Borji](http://aliborji.xyz/aliborji.html)
 
 ## Code
-Our code is heavily borrowed from [pix2pix](https://github.com/phillipi/pix2pix).
+Our code is borrowed from [pix2pix](https://github.com/phillipi/pix2pix).
 We will release the code soon.
 
 
