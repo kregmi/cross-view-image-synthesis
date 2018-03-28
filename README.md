@@ -8,6 +8,8 @@ Krishna Regmi, [Ali Borji](http://aliborji.xyz/aliborji.html)
 
 CVPR 2018.
 
+[[https://github.com/kregmi/cross-view-image-synthesis/blob/master/test_256.pdf|alt=test_256]]
+
 ## Code
 Our code is borrowed from [pix2pix](https://github.com/phillipi/pix2pix).
 We will release the code soon.
