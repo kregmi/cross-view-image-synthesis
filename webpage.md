@@ -1,6 +1,6 @@
 
 ## Cross-View Image Synthesis
-[[Project](https://kregmi.github.io/cross-view-image-synthesis)]
+[[Project](https://kregmi.github.io/cross-view-synthesis)]
 [[Arxiv](https://arxiv.org/pdf/1803.03396.pdf)]
 
 Cross-View Image Synthesis using Conditional GANs, 
