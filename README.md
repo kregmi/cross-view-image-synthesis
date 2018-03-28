@@ -1,4 +1,8 @@
-## Cross-View Image Synthesis using Conditional GANs
+##cross-view-image-synthesis
+[Project]() 
+[Arxiv](https://arxiv.org/pdf/1803.03396.pdf)
+
+Cross-View Image Synthesis using Conditional GANs
 Krishna Regmi, [Ali Borji](http://aliborji.xyz/aliborji.html)
 
 ### Code
