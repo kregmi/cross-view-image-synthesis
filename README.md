@@ -1,6 +1,5 @@
-## Cross-View Image Synthesis
-[[Project](https://kregmi.github.io/cross-view-image-synthesis)]
-[[Paper](https://arxiv.org/pdf/1803.03396.pdf)]
+## cross-view-image-synthesis
+[[Project](https://kregmi.github.io/cross-view-synthesis)] [[Paper](https://arxiv.org/pdf/1803.03396.pdf)]
 
 
 ## Abstract
@@ -24,8 +23,8 @@ We used the following datasets:
 
 ## Results
 
-Some qualitative results on Dayton of GT-CrossView Dataset.
-![alt tag](https://github.com/kregmi/cross-view-image-synthesis/blob/master/test_256.jpg)
+Some qualitative results on GT-CrossView Dataset.
+![result](https://github.com/kregmi/cross-view-image-synthesis/blob/master/test_256.jpg)
 
 
 ## Citation
