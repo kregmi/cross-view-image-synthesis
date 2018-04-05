@@ -22,12 +22,12 @@ Pretrained models can be downloaded here.
 [[X-Pix2pix]](https://drive.google.com/open?id=1y5E4XNWiYz5s80Yb9TwVyqFqnZJ3byoJ)   [[X-Fork]]()   [[X-Seq](https://drive.google.com/open?id=11VA_ipbSv6Y_cqNG0BouQwK8LbiJEgiX)]
 
 
-## DATASET
+## Datasets
 We used the following datasets:
 1. [GT-CrossView](https://github.com/lugiavn/gt-crossview)
 2. [CVUSA](http://cs.uky.edu/~jacobs/datasets/cvusa/)
 
-## DATASET
+## Results
 
 
 ## Citation
