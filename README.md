@@ -1,5 +1,5 @@
 ## cross-view-image-synthesis
-[[Project](https://kregmi.github.io/cross-view-synthesis)] [[Paper](https://arxiv.org/pdf/1803.03396.pdf)]
+[[Project](https://kregmi.github.io/cross-view-image-synthesis)] [[Paper](https://arxiv.org/pdf/1803.03396.pdf)]
 
 
 ## Abstract
