@@ -24,7 +24,7 @@ We used the following datasets:
 ## Models
 Pretrained models can be downloaded here.
 
-[[X-Fork]]()   [[X-Seq]()]
+[[X-Pix2pix]]()   [[X-Fork]]()   [[X-Seq]()]
 
 ## Citation
 If you find our work useful in your research, please cite our paper 
