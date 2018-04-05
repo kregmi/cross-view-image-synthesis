@@ -29,6 +29,9 @@ We used the following datasets:
 
 ## Results
 
+Some qualitative results on Dayton of GT-CrossView Dataset.
+![alt tag](https://github.com/kregmi/cross-view-image-synthesis/blob/master/test_256.jpg)
+
 
 ## Citation
 If you find our work useful in your research, please cite our paper 
