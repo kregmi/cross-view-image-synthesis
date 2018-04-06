@@ -24,6 +24,7 @@ We used the following datasets:
 ## Results
 
 Some qualitative results on GT-CrossView Dataset.
+
 ![result](https://github.com/kregmi/cross-view-image-synthesis/blob/master/test_256.jpg)
 
 
