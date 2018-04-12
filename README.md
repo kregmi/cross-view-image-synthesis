@@ -13,7 +13,7 @@ We will release the code soon.
 ## Models
 Pretrained models can be downloaded here.
 
-[[X-Pix2pix]](https://drive.google.com/open?id=1y5E4XNWiYz5s80Yb9TwVyqFqnZJ3byoJ)   [[X-Fork]]()   [[X-Seq](https://drive.google.com/open?id=11VA_ipbSv6Y_cqNG0BouQwK8LbiJEgiX)]
+[[X-Pix2pix]](https://drive.google.com/open?id=1y5E4XNWiYz5s80Yb9TwVyqFqnZJ3byoJ)   [[X-Fork]](https://drive.google.com/open?id=1DsXaEJJy_iHjd819ZU_zKu8x3VzHHCYO)   [[X-Seq](https://drive.google.com/open?id=11VA_ipbSv6Y_cqNG0BouQwK8LbiJEgiX)]
 
 
 ## Datasets
@@ -29,7 +29,7 @@ Some qualitative results on GT-CrossView Dataset.
 
 
 ## Citation
-If you find our work useful for your research, please cite our paper:
+If you use this code for your research, please cite the following paper:
 
 ```markdown
 @article{regmi2018cross,
