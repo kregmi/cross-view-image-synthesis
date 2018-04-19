@@ -7,8 +7,6 @@ Learning to generate natural scenes has always been a challenging task in comput
 
 ## Code
 Our code is borrowed from [pix2pix](https://github.com/phillipi/pix2pix).
-We will release the code soon.
-
 
 ## Models
 Pretrained models can be downloaded here.
