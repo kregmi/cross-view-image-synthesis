@@ -3,7 +3,9 @@
 
 Torch implementation for Crossview-Fork (XFork) model. 
 
-Generator for X-Fork (add figure)
+Generator for X-Fork
+
+![generator_fork](generator_fork.jpg)
 
 ## Setup
 
@@ -61,16 +63,9 @@ The original datasets are available here:
 1. [GT-CrossView](https://github.com/lugiavn/gt-crossview)
 2. [CVUSA](http://cs.uky.edu/~jacobs/datasets/cvusa/)
 
-Ground Truth semantic segmentation maps are not available for the datasets. We used RefineNet trained on CityScapes for generating semantic segmentation maps and used them as Gound Truth segmaps in our experiments.
+Ground Truth semantic segmentation maps are not available for the datasets. We used RefineNet trained on CityScapes for generating semantic segmentation maps and used them as Gound Truth segmaps in our experiments. Please cite their papers if you use the dataset.
 
-Train/Test splits for Dayton dataset can be downloaded from here. Please cite their papers if you use the dataset.
-Paper for crossview dataset and refinenet model and cityscape dataset
-
-
-Download the datasets using the following script. Some of the datasets are collected by other researchers. Please cite their papers if you use the data.
-```bash
-bash ./datasets/download_dataset.sh dataset_name
-```
+Train/Test splits for Dayton dataset can be downloaded from here [Dayton](). 
 
 ## Models
 Pretrained models can be downloaded from here.
@@ -84,8 +79,7 @@ Place the models in `./checkpoints/` after the download has finished.
 Refer to [pix2pix](https://github.com/phillipi/pix2pix/blob/master/scripts/combine_A_and_B.py) for steps and code to generate pairs of images required for training/testing.
 
 For XFork, first concat the streetview and aerial images followed by concatenating their segmentation maps and finally concatenating them all along the columns. Each concatenated image file in the dataset will contain {A,B,As,Bs}, 
-
-where A=streetview image, B=aerial image, As=segmentation map for streetview image and Bs=segmentation map for aerial image.
+where A=streetview image, B=aerial image, As=segmentation map for streetview image, and Bs=segmentation map for aerial image.
 
 ## Citation
 If you use this code for your research, please cite our paper [Cross-View Image Synthesis using Conditional GANs](https://arxiv.org/pdf/1803.03396.pdf):
