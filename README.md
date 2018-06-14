@@ -25,6 +25,10 @@ Some qualitative results on GT-CrossView Dataset:
 
 ![result](test_256.jpg)
 
+## CVPR Poster
+
+
+![poster](cross-view-image-synthesis-poster.jpg)
 
 ## Citation
 If you use this code for your research, please cite the following paper:
