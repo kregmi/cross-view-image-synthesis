@@ -5,9 +5,8 @@ function defineG_encoder_decoder_fork(input_nc, output_nc_seg, output_nc, ngf)
     local netG = nil 
     -- input is (nc) x 256 x 256
     local e1 = - nn.SpatialConvolution(input_nc, ngf, 3, 3, 1, 1, 1, 1)
-    local e1_ = e1 - nn.LeakyReLU(0.2, true) - nn.SpatialConvolution(ngf, ngf* 2, 4, 4, 2, 2, 1, 1) - nn.SpatialBatchNormalization(ngf* 2)
     -- input is (ngf) x 128 x 128
-    local e2 = e1_ - nn.LeakyReLU(0.2, true) - nn.SpatialConvolution(ngf* 2, ngf *4 , 4, 4, 2, 2, 1, 1) - nn.SpatialBatchNormalization(ngf *4 )
+    local e2 = e1 - nn.LeakyReLU(0.2, true) - nn.SpatialConvolution(ngf* 2, ngf *4 , 4, 4, 2, 2, 1, 1) - nn.SpatialBatchNormalization(ngf *4 )
     -- input is (ngf * 2) x 64 x 64
     local e3 = e2 - nn.LeakyReLU(0.2, true) - nn.SpatialConvolution(ngf *4 , ngf * 8, 4, 4, 2, 2, 1, 1) - nn.SpatialBatchNormalization(ngf * 8)
     -- input is (ngf * 4) x 32 x 32
