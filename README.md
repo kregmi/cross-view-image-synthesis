@@ -8,9 +8,6 @@ Learning to generate natural scenes has always been a challenging task in comput
 ## Code
 Our code is borrowed from [pix2pix](https://github.com/phillipi/pix2pix). The data loader is modified to handle images and semantic segmentation maps.
 
-Generator for X-Fork
-![generator_fork](generator_fork.jpg)
-
 ## Setup
 
 ### Getting Started
@@ -39,6 +36,14 @@ DATA_ROOT=./datasets/AB_AsBs name=sample_images which_direction=a2g phase=sample
 DATA_ROOT=./datasets/AB_AsBs name=sample_images which_direction=a2g phase=sample which_epoch=35 th test_fork.lua 
 ```
 The test results will be saved to: `./results/sample_images/35_net_G_sample/images/`.
+
+## Setup Training and Test data
+### Generating Pairs
+Refer to [pix2pix](https://github.com/phillipi/pix2pix/blob/master/scripts/combine_A_and_B.py) for steps and code to generate pairs of images required for training/testing.
+
+For XFork, first concat the streetview and aerial images followed by concatenating their segmentation maps and finally concatenating them all along the columns. Each concatenated image file in the dataset will contain {A,B,As,Bs}, 
+where A=streetview image, B=aerial image, As=segmentation map for streetview image, and Bs=segmentation map for aerial image.
+
 
 ## Train
 ```bash
@@ -71,30 +76,13 @@ Ground Truth semantic segmentation maps are not available for the datasets. We u
 
 Train/Test splits for Dayton dataset can be downloaded from here [Dayton](). 
 
-## Models
-Pretrained models can be downloaded from here.
-
-[[X-Fork]](https://drive.google.com/open?id=1DsXaEJJy_iHjd819ZU_zKu8x3VzHHCYO)
-
-Place the models in `./checkpoints/` after the download has finished.
-
-## Setup Training and Test data
-### Generating Pairs
-Refer to [pix2pix](https://github.com/phillipi/pix2pix/blob/master/scripts/combine_A_and_B.py) for steps and code to generate pairs of images required for training/testing.
-
-For XFork, first concat the streetview and aerial images followed by concatenating their segmentation maps and finally concatenating them all along the columns. Each concatenated image file in the dataset will contain {A,B,As,Bs}, 
-where A=streetview image, B=aerial image, As=segmentation map for streetview image, and Bs=segmentation map for aerial image.
 
 ## Models
 Pretrained models can be downloaded here.
 
 [[X-Pix2pix]](https://drive.google.com/open?id=1y5E4XNWiYz5s80Yb9TwVyqFqnZJ3byoJ)   [[X-Fork]](https://drive.google.com/open?id=1DsXaEJJy_iHjd819ZU_zKu8x3VzHHCYO)   [[X-Seq](https://drive.google.com/open?id=11VA_ipbSv6Y_cqNG0BouQwK8LbiJEgiX)]
 
-
-## Datasets
-We used the following datasets:
-1. [GT-CrossView](https://github.com/lugiavn/gt-crossview)
-2. [CVUSA](http://cs.uky.edu/~jacobs/datasets/cvusa/)
+Place the models in `./checkpoints/` after the download has finished.
 
 ## Results
 
