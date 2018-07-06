@@ -1,5 +1,5 @@
 # cross-view-image-synthesis
-[[Project](https://kregmi.github.io/cross-view-image-synthesis)] [[Paper](https://arxiv.org/pdf/1803.03396.pdf)]
+[[Project](https://kregmi.github.io/cross-view-image-synthesis)] [[Paper](http://openaccess.thecvf.com/content_cvpr_2018/papers/Regmi_Cross-View_Image_Synthesis_CVPR_2018_paper.pdf)]
 
 
 ## Abstract
@@ -98,11 +98,12 @@ Some qualitative results on GT-CrossView Dataset:
 If you use this code for your research, please cite the following paper:
 
 ```markdown
-@article{regmi2018cross,
-  title={Cross-View Image Synthesis using Conditional GANs},
-  author={Regmi, Krishna and Borji, Ali},
-  journal={arXiv preprint arXiv:1803.03396},
-  year={2018}
+@InProceedings{Regmi_2018_CVPR,
+author = {Regmi, Krishna and Borji, Ali},
+title = {Cross-View Image Synthesis Using Conditional GANs},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2018}
 }
 ```
 
