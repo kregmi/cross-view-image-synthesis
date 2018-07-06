@@ -74,7 +74,7 @@ The original datasets are available here:
 
 Ground Truth semantic segmentation maps are not available for the datasets. We used RefineNet trained on CityScapes for generating semantic segmentation maps and used them as Gound Truth segmaps in our experiments. Please cite their papers if you use the dataset.
 
-Train/Test splits for Dayton dataset can be downloaded from here [Dayton](). 
+Train/Test splits for Dayton dataset can be downloaded from here [Dayton](https://github.com/kregmi/cross-view-image-synthesis/tree/master/datasets/dayton_split). 
 
 
 ## Models
