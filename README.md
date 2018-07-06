@@ -1,4 +1,4 @@
-## cross-view-image-synthesis
+# cross-view-image-synthesis
 [[Project](https://kregmi.github.io/cross-view-image-synthesis)] [[Paper](https://arxiv.org/pdf/1803.03396.pdf)]
 
 
@@ -6,15 +6,9 @@
 Learning to generate natural scenes has always been a challenging task in computer vision. It is even more painstaking when the generation is conditioned on images with drastically different views. This is mainly because understanding, corresponding, and transforming appearance and semantic information across the views is not trivial. In this paper, we attempt to solve the novel problem of cross-view image synthesis, aerial to street-view and vice versa, using conditional generative adversarial networks (cGAN). Two new architectures called Crossview Fork (X-Fork) and Crossview Sequential (X-Seq) are proposed to generate scenes with resolutions of 64x64 and 256x256 pixels. X-Fork architecture has a single discriminator and a single generator. The generator hallucinates both the image and its semantic segmentation in the target view. X-Seq architecture utilizes two cGANs. The first one generates the target image which is subsequently fed to the second cGAN for generating its corresponding semantic segmentation map. The feedback from the second cGAN helps the first cGAN generate sharper images. Both of our proposed architectures learn to generate natural images as well as their semantic segmentation maps. The proposed methods show that they are able to capture and maintain the true semantics of objects in source and target views better than the traditional image-to-image translation method which considers only the visual appearance of the scene. Extensive qualitative and quantitative evaluations support the effectiveness of our frameworks, compared to two state of the art methods, for natural scene generation across drastically different views.
 
 ## Code
-Our code is borrowed from [pix2pix](https://github.com/phillipi/pix2pix).
-
-
-# XFork 
-
-Torch implementation for Crossview-Fork (XFork) model. 
+Our code is borrowed from [pix2pix](https://github.com/phillipi/pix2pix). The data loader is modified to handle images and semantic segmentation maps.
 
 Generator for X-Fork
-
 ![generator_fork](generator_fork.jpg)
 
 ## Setup
@@ -91,22 +85,6 @@ Refer to [pix2pix](https://github.com/phillipi/pix2pix/blob/master/scripts/combi
 For XFork, first concat the streetview and aerial images followed by concatenating their segmentation maps and finally concatenating them all along the columns. Each concatenated image file in the dataset will contain {A,B,As,Bs}, 
 where A=streetview image, B=aerial image, As=segmentation map for streetview image, and Bs=segmentation map for aerial image.
 
-## Citation
-If you use this code for your research, please cite our paper [Cross-View Image Synthesis using Conditional GANs](https://arxiv.org/pdf/1803.03396.pdf):
-
-```markdown
-@article{regmi2018cross,
-  title={Cross-View Image Synthesis using Conditional GANs},
-  author={Regmi, Krishna and Borji, Ali},
-  journal={arXiv preprint arXiv:1803.03396},
-  year={2018}
-}
-```
-
-## Acknowledgments
-The code is borrowed heavily from [pix2pix](https://github.com/phillipi/pix2pix/). The data loader is modified to handle images and semantic segmentation maps.
-
-
 ## Models
 Pretrained models can be downloaded here.
 
@@ -126,6 +104,7 @@ Some qualitative results on GT-CrossView Dataset:
 
 ## CVPR Poster
 ![poster](cross-view-image-synthesis-poster.jpg)
+
 
 ## Citation
 If you use this code for your research, please cite the following paper:
