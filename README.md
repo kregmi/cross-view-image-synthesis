@@ -37,13 +37,21 @@ DATA_ROOT=./datasets/AB_AsBs name=sample_images which_direction=a2g phase=sample
 ```
 The test results will be saved to: `./results/sample_images/35_net_G_sample/images/`.
 
-## Setup Training and Test data
+## Training and Test data
+### Datasets
+The original datasets are available here:
+1. [GT-CrossView](https://github.com/lugiavn/gt-crossview)
+2. [CVUSA](http://cs.uky.edu/~jacobs/datasets/cvusa/)
+
+Ground Truth semantic segmentation maps are not available for the datasets. We used RefineNet trained on CityScapes for generating semantic segmentation maps and used them as Gound Truth segmaps in our experiments. Please cite their papers if you use the dataset.
+
+Train/Test splits for Dayton dataset can be downloaded from here [Dayton](https://github.com/kregmi/cross-view-image-synthesis/tree/master/datasets/dayton_split). 
+
 ### Generating Pairs
 Refer to [pix2pix](https://github.com/phillipi/pix2pix/blob/master/scripts/combine_A_and_B.py) for steps and code to generate pairs of images required for training/testing.
 
 For XFork, first concat the streetview and aerial images followed by concatenating their segmentation maps and finally concatenating them all along the columns. Each concatenated image file in the dataset will contain {A,B,As,Bs}, 
 where A=streetview image, B=aerial image, As=segmentation map for streetview image, and Bs=segmentation map for aerial image.
-
 
 ## Train
 ```bash
@@ -65,17 +73,6 @@ This will run the model named `expt_name` in direction `a2g` on all images in `/
 Result images, and a webpage to view them, are saved to `./results/expt_name` (can be changed by passing `results_dir=your_dir` in test_fork.lua).
 
 See `opt` in test_fork.lua for additional testing options.
-
-
-## Datasets
-The original datasets are available here:
-1. [GT-CrossView](https://github.com/lugiavn/gt-crossview)
-2. [CVUSA](http://cs.uky.edu/~jacobs/datasets/cvusa/)
-
-Ground Truth semantic segmentation maps are not available for the datasets. We used RefineNet trained on CityScapes for generating semantic segmentation maps and used them as Gound Truth segmaps in our experiments. Please cite their papers if you use the dataset.
-
-Train/Test splits for Dayton dataset can be downloaded from here [Dayton](https://github.com/kregmi/cross-view-image-synthesis/tree/master/datasets/dayton_split). 
-
 
 ## Models
 Pretrained models can be downloaded here.
