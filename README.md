@@ -50,7 +50,7 @@ Train/Test splits for Dayton dataset can be downloaded from here [Dayton](https:
 ### Generating Pairs
 Refer to [pix2pix](https://github.com/phillipi/pix2pix/blob/master/scripts/combine_A_and_B.py) for steps and code to generate pairs of images required for training/testing.
 
-For XFork, first concat the streetview and aerial images followed by concatenating their segmentation maps and finally concatenating them all along the columns. Each concatenated image file in the dataset will contain {A,B,As,Bs}, 
+First concatenate the streetview and aerial images followed by concatenating their segmentation maps and finally concatenating them all along the columns. Each concatenated image file in the dataset will contain {A,B,As,Bs}, 
 where A=streetview image, B=aerial image, As=segmentation map for streetview image, and Bs=segmentation map for aerial image.
 
 ## Train
