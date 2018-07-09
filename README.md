@@ -20,7 +20,7 @@ luarocks install https://raw.githubusercontent.com/szym/display/master/display-s
 - Clone this repo:
 ```bash
 git clone git@github.com:kregmi/cross-view-image-synthesis.git
-cd cross-view-image-synthesis/XFork
+cd cross-view-image-synthesis
 ```
 
 - Training the model
