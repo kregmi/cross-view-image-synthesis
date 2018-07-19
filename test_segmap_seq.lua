@@ -1,5 +1,5 @@
--- usage: DATA_ROOT=/path/to/data/ name=expt1 which_direction=BtoA th test.lua
---
+-- usage: DATA_ROOT=/path/to/data/ name=expt1 which_direction=a2g th test_segmap_seq.lua
+-- Be sure to use correct 'name' (G-model) and 'which_direction' when generating segmentation maps.
 -- code derived from https://github.com/soumith/dcgan.torch
 --
 
