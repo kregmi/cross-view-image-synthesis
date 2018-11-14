@@ -398,7 +398,7 @@ local fGx1 = function(x)
         errL11 = 0
     end
     
-    netG1:backward(real_A, df_dg1 + df_do_AE1:mul(opt.lambda))
+    netG1:backward(real_A, df_dg1 + df_do_AE1:mul(opt.lambda) + grads_seq:mul(0.1))
     
     return errG1, gradParametersG1
 end
@@ -442,7 +442,7 @@ local fGx2 = function(x)
         errL12 = 0
     end
     
-    netG2:backward(fake_B, df_dg1 + df_do_AE1:mul(opt.lambda))
+    grads_seq = netG2:backward(fake_B, df_dg1 + df_do_AE1:mul(opt.lambda))
     
     return errG2, gradParametersG2
 end
@@ -462,7 +462,7 @@ local counter = 0
 if opt.continue_train == 1 then counter = opt.which_epoch end
 
 for epoch = 1 + counter, opt.niter do
-	collectgarbage()
+    collectgarbage()
     epoch_tm:reset()
     for i = 1, math.min(data:size(), opt.ntrain), opt.batchSize do
     	collectgarbage()
@@ -470,18 +470,18 @@ for epoch = 1 + counter, opt.niter do
 
         -- load a batch and run G on that batch
         createRealFake()
-        
-        -- (1) Update D1 network: maximize log(D(x,y)) + log(1 - D(x,G(x)))
-        if opt.use_GAN==1 then optim.adam(fDx1, parametersD1, optimStateD1) end
-                
-        -- (2) Update G1 network: maximize log(D(x,G(x))) + L1(y,G(x))
-        optim.adam(fGx1, parametersG1, optimStateG1)
-        
-        -- (3) Update D2 network: maximize log(D(x,y)) + log(1 - D(x,G(x)))
+		
+	-- (1) Update D2 network: maximize log(D(x,y)) + log(1 - D(x,G(x)))
         if opt.use_GAN==1 then optim.adam(fDx2, parametersD2, optimStateD2) end
         
-        -- (4) Update G2 network: maximize log(D(x,G(x))) + L1(y,G(x))
+        -- (2) Update G2 network: maximize log(D(x,G(x))) + L1(y,G(x))
         optim.adam(fGx2, parametersG2, optimStateG2)
+
+	-- (3) Update D1 network: maximize log(D(x,y)) + log(1 - D(x,G(x)))
+        if opt.use_GAN==1 then optim.adam(fDx1, parametersD1, optimStateD1) end
+		
+        -- (4) Update G1 network: maximize log(D(x,G(x))) + L1(y,G(x))
+        optim.adam(fGx1, parametersG1, optimStateG1)
         
         -- display
         counter = counter + 1
