@@ -51,6 +51,7 @@ opt = {
    which_model_netG = 'encoder_decoder',  -- selects model to use for netG 	crossview_G_64
    n_layers_D = 0,             -- only used if which_model_netD=='n_layers'
    lambda = 100,               -- weight on L1 term in objective
+   lambda_grads = 0.1,               -- weight on L1 term in objective
    which_epoch = '0',            -- epoch number to resume training, used only if continue_train=1
 }
 -- one-line argument parser. parses enviroment variables to override the defaults
@@ -398,7 +399,7 @@ local fGx1 = function(x)
         errL11 = 0
     end
     
-    netG1:backward(real_A, df_dg1 + df_do_AE1:mul(opt.lambda) + grads_seq:mul(0.1))
+    netG1:backward(real_A, df_dg1 + df_do_AE1:mul(opt.lambda) + grads_seq:mul(opt.lambda_grads))
     
     return errG1, gradParametersG1
 end
