@@ -92,16 +92,22 @@ Some qualitative results on GT-CrossView Dataset:
 
 
 ## Citation
-If you use this code for your research, please cite the following paper:
+If you use this code for your research, please cite our paper:
+
+ [bibtex](https://scholar.googleusercontent.com/scholar.bib?q=info:YKphbKKT1tEJ:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAXAB63S3ndlUD4sgxTrQK1OFXi_NJ9yHb&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1)
 
 ```markdown
+<!---
 @InProceedings{Regmi_2018_CVPR,
 author = {Regmi, Krishna and Borji, Ali},
 title = {Cross-View Image Synthesis Using Conditional GANs},
 booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
 month = {June},
 year = {2018}
-}
+} 
+
+--->
+
 ```
 
 ## Questions
