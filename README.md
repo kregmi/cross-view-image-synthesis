@@ -85,33 +85,16 @@ Place the models in `./checkpoints/` after the download has finished.
 
 Some qualitative results on GT-CrossView Dataset:
 
-![result](test_256.jpg)
+![result](resources/test_256.jpg)
 
 ## CVPR Poster
-![poster](cross-view-image-synthesis-poster.jpg)
+![poster](resources/cross-view-image-synthesis-poster.jpg)
 
 
 ## Citation
-If you find our work useful for your research, please cite our papers: 
-- [Cross-View Image Synthesis Using Conditional GANs, CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Regmi_Cross-View_Image_Synthesis_CVPR_2018_paper.pdf)
-```bash
-@InProceedings{Regmi_2018_CVPR,
-author = {Regmi, Krishna and Borji, Ali},
-title = {Cross-View Image Synthesis Using Conditional GANs},
-booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2018}
-}
-```
-- [Cross-view image synthesis using geometry-guided conditional GANs, CVIU 2019](https://arxiv.org/pdf/1808.05469.pdf)
-```bash
-@article{regmi2018cross,
-  title={Cross-view image synthesis using geometry-guided conditional GANs},
-  author={Regmi, Krishna and Borji, Ali},
-  journal={arXiv preprint arXiv:1808.05469},
-  year={2018}
-}
-```
+If you find our works useful for your research, please cite the following papers: 
+- Cross-View Image Synthesis Using Conditional GANs, CVPR 2018 [pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Regmi_Cross-View_Image_Synthesis_CVPR_2018_paper.pdf), [bibtex](https://github.com/kregmi/cross-view-image-synthesis/tree/master/resources/bibtex_cvpr.txt)
+- Cross-view image synthesis using geometry-guided conditional GANs, CVIU 2019 [pdf](https://arxiv.org/pdf/1808.05469.pdf), [bibtex](https://github.com/kregmi/cross-view-image-synthesis/tree/master/resources/bibtex_cviu.txt)
 
 ## Questions
 
