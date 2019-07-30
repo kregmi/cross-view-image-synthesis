@@ -93,7 +93,7 @@ Some qualitative results on GT-CrossView Dataset:
 
 ## Citation
 If you use this code for your research, please cite our papers: 
-- [Cross-View Image Synthesis Using Conditional GANs](http://openaccess.thecvf.com/content_cvpr_2018/papers/Regmi_Cross-View_Image_Synthesis_CVPR_2018_paper.pdf)
+- [Cross-View Image Synthesis Using Conditional GANs, CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Regmi_Cross-View_Image_Synthesis_CVPR_2018_paper.pdf)
 ```bash
 @InProceedings{Regmi_2018_CVPR,
 author = {Regmi, Krishna and Borji, Ali},
@@ -103,7 +103,7 @@ month = {June},
 year = {2018}
 }
 ```
-- [Cross-view image synthesis using geometry-guided conditional GANs](https://arxiv.org/pdf/1808.05469.pdf)
+- [Cross-view image synthesis using geometry-guided conditional GANs, CVIU 2019](https://arxiv.org/pdf/1808.05469.pdf)
 ```bash
 @article{regmi2018cross,
   title={Cross-view image synthesis using geometry-guided conditional GANs},
