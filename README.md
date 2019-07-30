@@ -92,7 +92,7 @@ Some qualitative results on GT-CrossView Dataset:
 
 
 ## Citation
-If you use this code for your research, please cite our papers: 
+If you find our work useful for your research, please cite our papers: 
 - [Cross-View Image Synthesis Using Conditional GANs, CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Regmi_Cross-View_Image_Synthesis_CVPR_2018_paper.pdf)
 ```bash
 @InProceedings{Regmi_2018_CVPR,
