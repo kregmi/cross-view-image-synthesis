@@ -85,10 +85,10 @@ Place the models in `./checkpoints/` after the download has finished.
 
 Some qualitative results on GT-CrossView Dataset:
 
-![result](test_256.jpg)
+![result](https://github.com/kregmi/cross-view-image-synthesis/tree/master/resources/test_256.jpg)
 
 ## CVPR Poster
-![poster](cross-view-image-synthesis-poster.jpg)
+![poster](https://github.com/kregmi/cross-view-image-synthesis/tree/master/resources/cross-view-image-synthesis-poster.jpg)
 
 
 ## Citation
