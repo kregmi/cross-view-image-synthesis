@@ -104,7 +104,14 @@ year = {2018}
 }
 ```
 - [Cross-view image synthesis using geometry-guided conditional GANs](https://arxiv.org/pdf/1808.05469.pdf)
-
+```bash
+@article{regmi2018cross,
+  title={Cross-view image synthesis using geometry-guided conditional GANs},
+  author={Regmi, Krishna and Borji, Ali},
+  journal={arXiv preprint arXiv:1808.05469},
+  year={2018}
+}
+```
 
 ## Questions
 
