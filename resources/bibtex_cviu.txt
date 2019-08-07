@@ -1,6 +1,10 @@
-@article{regmi2018cross,
-  title={Cross-view image synthesis using geometry-guided conditional GANs},
-  author={Regmi, Krishna and Borji, Ali},
-  journal={arXiv preprint arXiv:1808.05469},
-  year={2018}
+@article{REGMI2019,
+title = "Cross-view image synthesis using geometry-guided conditional GANs",
+journal = "Computer Vision and Image Understanding",
+year = "2019",
+issn = "1077-3142",
+doi = "https://doi.org/10.1016/j.cviu.2019.07.008",
+url = "http://www.sciencedirect.com/science/article/pii/S1077314219301043",
+author = "Krishna Regmi and Ali Borji",
+keywords = "Synthesis, GANs, Cross-view, View-translation, Homography"
 }
