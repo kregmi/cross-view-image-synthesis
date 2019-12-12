@@ -43,12 +43,14 @@ The original datasets are available here:
 1. [GT-CrossView](https://github.com/lugiavn/gt-crossview)
 2. [CVUSA](http://cs.uky.edu/~jacobs/datasets/cvusa/)
 
-Ground Truth semantic segmentation maps are not available for the datasets. We used RefineNet trained on CityScapes for generating semantic segmentation maps and used them as Gound Truth segmaps in our experiments. Please cite their papers if you use the dataset. 
-Link to the segmentation maps (for Dayton Dataset) used in training/testing is available here[SegMaps](https://github.com/kregmi/cross-view-image-synthesis/issues/16#issuecomment-453538658). 
+Ground Truth semantic segmentation maps are not available for the Dayton (GT-CrossView) dataset. We used RefineNet trained on CityScapes for generating semantic segmentation maps and used them as Gound Truth segmaps in our experiments. Please cite their papers if you use the dataset. We have shared the segmentation maps of Dayton Dataset here [Dayton SegMaps](https://github.com/kregmi/cross-view-image-synthesis/issues/16#issuecomment-453538658). 
+
+Segmentation maps for CVUSA dataset are available with the dataset. Please follow the instruction in this [link](https://github.com/kregmi/cross-view-image-synthesis/issues/18#issuecomment-435638176) to convert them to the segmaps used in this project.
 
 
 Train/Test splits for Dayton Dataset can be downloaded from here [Dayton](https://github.com/kregmi/cross-view-image-synthesis/tree/master/datasets/dayton_split). 
 
+For CVUSA dataset experiments, we used the same Train/Test split as provided in the dataset.
 
 ### Generating Pairs
 Refer to [pix2pix](https://github.com/phillipi/pix2pix/blob/master/scripts/combine_A_and_B.py) for steps and code to generate pairs of images required for training/testing.
